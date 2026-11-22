@@ -28,6 +28,12 @@
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "appName": "Psst! Liste de courses",
+        "language": "fr-FR",
+        "bundleIdentifier": "com.leandrobarbosa.psst"
+      }
+    }
   }
 }
