@@ -1,0 +1,6 @@
+{
+  "CFBundleDisplayName": "Psst!",
+  "NSLocationWhenInUseUsageDescription": "Psst! uses your location to find nearby supermarkets when you run a search.",
+  "NSLocationAlwaysAndWhenInUseUsageDescription": "If you turn on reminders, Psst! notifies you when you pass near a supermarket, even when the app is closed. Your location stays on your iPhone.",
+  "NSLocationAlwaysUsageDescription": "If you turn on reminders, Psst! notifies you when you pass near a supermarket, even when the app is closed. Your location stays on your iPhone."
+}

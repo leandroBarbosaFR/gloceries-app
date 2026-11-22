@@ -1,0 +1,123 @@
+{
+  "expo": {
+    "name": "Psst!",
+    "slug": "psst-courses",
+    "scheme": "psst",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.leandrobarbosa.psst",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "comgooglemaps",
+          "waze"
+        ],
+        "CFBundleDevelopmentRegion": "fr",
+        "CFBundleLocalizations": [
+          "fr",
+          "en",
+          "pt-BR"
+        ],
+        "CFBundleAllowMixedLocalizations": true
+      },
+      "privacyManifests": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyTrackingDomains": [],
+        "NSPrivacyCollectedDataTypes": [
+          {
+            "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeEmailAddress",
+            "NSPrivacyCollectedDataTypeLinked": true,
+            "NSPrivacyCollectedDataTypeTracking": false,
+            "NSPrivacyCollectedDataTypePurposes": [
+              "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+            ]
+          },
+          {
+            "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeOtherUserContent",
+            "NSPrivacyCollectedDataTypeLinked": true,
+            "NSPrivacyCollectedDataTypeTracking": false,
+            "NSPrivacyCollectedDataTypePurposes": [
+              "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+            ]
+          }
+        ],
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
+          }
+        ]
+      },
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "package": "com.leandrobarbosa.psst",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "POST_NOTIFICATIONS",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_LOCATION",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Psst! utilise votre position pour trouver les supermarchés proches quand vous lancez une recherche.",
+          "locationAlwaysAndWhenInUsePermission": "Si vous activez les rappels, Psst! vous prévient quand vous passez près d’un supermarché, même app fermée. Votre position reste sur votre iPhone.",
+          "locationAlwaysPermission": "Si vous activez les rappels, Psst! vous prévient quand vous passez près d’un supermarché, même app fermée. Votre position reste sur votre iPhone.",
+          "isIosBackgroundLocationEnabled": false,
+          "isAndroidBackgroundLocationEnabled": true,
+          "locationFullAccuracyPermission": "La position exacte permet à Psst! de déclencher le rappel au bon moment, près du bon magasin.",
+          "motionUsagePermission": false
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "sounds": []
+        }
+      ],
+      "expo-status-bar",
+      "expo-font",
+      "expo-asset",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "resizeMode": "contain",
+          "backgroundColor": "#FAF8F3"
+        }
+      ],
+      "expo-localization",
+      "expo-web-browser"
+    ],
+    "icon": "./assets/icon.png",
+    "locales": {
+      "fr": "./locales/fr.json",
+      "en": "./locales/en.json",
+      "pt-BR": "./locales/pt-BR.json"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "de5b4eb4-f07f-4af7-90a7-a3a8690ef152"
+      }
+    },
+    "owner": "1367studio"
+  }
+}
